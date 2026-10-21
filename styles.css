@@ -89,3 +89,33 @@
 .footer-brand p{display:none!important}
 @media(max-width:900px){.nav-wrap{min-height:100px}.brand{min-width:110px}.brand img{width:100px;height:100px}}
 @media(max-width:600px){.nav-wrap{min-height:88px}.brand{min-width:90px}.brand img{width:86px;height:86px}}
+
+
+/* Supplied Siyaram Foods logo (including slogan) — header and footer */
+.brand{display:flex;align-items:center;min-width:220px}
+.brand img{width:210px;height:142px;object-fit:contain;object-position:left center;background:transparent;border-radius:0;filter:none}
+.nav-wrap{min-height:150px;height:auto;padding-top:6px;padding-bottom:6px}
+.brand-slogan{display:none!important}
+.footer-brand img{width:235px;height:185px;object-fit:contain;object-position:left center;background:transparent;border-radius:0}
+@media(max-width:900px){
+ .nav-wrap{min-height:116px}
+ .brand{min-width:150px}
+ .brand img{width:155px;height:108px}
+ .footer-brand img{width:210px;height:165px}
+}
+@media(max-width:600px){
+ .nav-wrap{min-height:92px}
+ .brand{min-width:100px}
+ .brand img{width:112px;height:82px}
+ .footer-brand img{width:190px;height:150px}
+}
+
+/* Footer logo fix: preserve the complete supplied logo and its slogan without cropping. */
+.footer-brand{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;min-width:0;}
+.footer-brand img{display:block;width:270px;max-width:100%;height:auto;max-height:none;object-fit:contain;object-position:left top;background:transparent;border:0;border-radius:0;padding:0;margin:0;}
+.footer-brand p{display:none!important;}
+@media(max-width:600px){.footer-brand img{width:240px;max-width:100%;height:auto;}}
+
+/* Footer logo: show on a clean white panel (same look as header) so the full logo, incl. "SIYARAM FOODS" and slogan, is crisp */
+.footer-brand img{background:#fff!important;padding:14px 18px!important;border-radius:14px!important;width:260px;max-width:100%;height:auto;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+@media(max-width:600px){.footer-brand img{width:230px;padding:12px 14px!important}}
