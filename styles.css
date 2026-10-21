@@ -119,3 +119,10 @@
 /* Footer logo: show on a clean white panel (same look as header) so the full logo, incl. "SIYARAM FOODS" and slogan, is crisp */
 .footer-brand img{background:#fff!important;padding:14px 18px!important;border-radius:14px!important;width:260px;max-width:100%;height:auto;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 @media(max-width:600px){.footer-brand img{width:230px;padding:12px 14px!important}}
+
+/* Brochure download buttons */
+.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.85)}
+.btn-outline:hover{background:#fff;color:#0d3a66}
+.cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+.hero-actions{flex-wrap:wrap}
+@media(max-width:600px){.cta-btns{width:100%}.cta-btns .btn{width:100%}.hero-actions .btn{width:100%}}
