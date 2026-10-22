@@ -126,3 +126,10 @@
 .cta-btns{display:flex;gap:12px;flex-wrap:wrap}
 .hero-actions{flex-wrap:wrap}
 @media(max-width:600px){.cta-btns{width:100%}.cta-btns .btn{width:100%}.hero-actions .btn{width:100%}}
+
+/* Seed-category images share one consistent card size. Chia is a landscape photo,
+   so use a carefully positioned cover crop to make the bowl visually comparable
+   to the square product photos while keeping the bowl in frame. */
+.product-card[data-category="seeds"] .product-img { background: #f4f4f1; }
+.product-card[data-category="seeds"] .product-img img { object-fit: cover; padding: 0; }
+.product-card[data-category="seeds"] .product-img img[alt="Chia Seeds"] { object-position: 75% center; }
